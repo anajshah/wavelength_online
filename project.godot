@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Wavelength"
+run/main_scene="uid://drv1dpw283jhm"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 

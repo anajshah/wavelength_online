@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqf3x25nwdxds"]
+
+[ext_resource type="Script" uid="uid://cgk15yoc43ysj" path="res://scripts/spinner.gd" id="1_i3bsr"]
+
+[node name="spinner" type="Node2D"]
+script = ExtResource("1_i3bsr")
