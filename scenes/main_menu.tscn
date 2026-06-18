@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://drv1dpw283jhm"]
+[gd_scene load_steps=9 format=3 uid="uid://drv1dpw283jhm"]
 
 [ext_resource type="Texture2D" uid="uid://cnn15d2ljt8d0" path="res://assets/Screenshot 2026-06-17 at 10.43.13 PM.png" id="1_l6cm7"]
 [ext_resource type="FontFile" uid="uid://calgl486mvk4r" path="res://assets/Party Vibes.otf" id="2_bqqt6"]
 [ext_resource type="FontFile" uid="uid://cu3cuo7xcca8a" path="res://assets/RETROACTIVE.otf" id="3_wu84c"]
-[ext_resource type="Script" uid="uid://j3csqyu7fg7l" path="res://scenes/play.gd" id="4_8ln24"]
-[ext_resource type="Script" uid="uid://bl8nww8nkclr1" path="res://scenes/guide.gd" id="5_rtw2f"]
+[ext_resource type="Script" uid="uid://j3csqyu7fg7l" path="res://scripts/play.gd" id="4_8ln24"]
+[ext_resource type="Script" uid="uid://bl8nww8nkclr1" path="res://scripts/guide.gd" id="5_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://c046y6y1ercdp" path="res://assets/Screenshot 2026-06-18 at 2.36.59 AM.png" id="6_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://cioady5unj8ry" path="res://assets/Screenshot 2026-06-18 at 2.43.12 AM.png" id="7_oa1go"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
 bg_color = Color(0.9843137, 0.9647059, 0.92941177, 1)
@@ -23,6 +25,12 @@ position = Vector2(671, 368)
 scale = Vector2(1.2619047, 1.6690141)
 texture = ExtResource("1_l6cm7")
 
+[node name="Screenshot20260618At2_36_59Am" type="Sprite2D" parent="."]
+position = Vector2(1027, 512)
+rotation = -1.5421883
+scale = Vector2(0.56839186, 0.73060393)
+texture = ExtResource("6_rtw2f")
+
 [node name="Label" type="Label" parent="."]
 offset_left = 210.0
 offset_top = 166.0
@@ -36,9 +44,9 @@ text = "Wavelength"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 522.0
-offset_top = 311.0
+offset_top = 312.0
 offset_right = 601.0
-offset_bottom = 348.0
+offset_bottom = 349.0
 theme_override_colors/font_color = Color(0.9843137, 0.9647059, 0.92941177, 1)
 theme_override_fonts/font = ExtResource("3_wu84c")
 theme_override_font_sizes/font_size = 32
@@ -67,6 +75,11 @@ theme_override_font_sizes/font_size = 64
 theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
 text = "Guide"
 script = ExtResource("5_rtw2f")
+
+[node name="Screenshot20260618At2_43_12Am" type="Sprite2D" parent="."]
+position = Vector2(667.00006, 71)
+scale = Vector2(2.8232985, 0.26451617)
+texture = ExtResource("7_oa1go")
 
 [connection signal="pressed" from="play" to="play" method="_on_pressed"]
 [connection signal="pressed" from="guide" to="guide" method="_on_pressed"]

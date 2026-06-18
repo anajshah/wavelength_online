@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqf3x25nwdxds"]
+[gd_scene load_steps=3 format=3 uid="uid://dqf3x25nwdxds"]
 
-[ext_resource type="Script" uid="uid://cgk15yoc43ysj" path="res://scripts/spinner.gd" id="1_i3bsr"]
+[ext_resource type="Texture2D" uid="uid://dhgooie4hgtgm" path="res://assets/Screenshot 2026-06-18 at 2.12.12 AM.png" id="2_78gc6"]
+[ext_resource type="PackedScene" uid="uid://c2wjkpaqkaj82" path="res://scenes/wheel.tscn" id="2_kry60"]
 
 [node name="spinner" type="Node2D"]
-script = ExtResource("1_i3bsr")
+
+[node name="Screenshot20260618At2_12_12Am" type="Sprite2D" parent="."]
+position = Vector2(577.50006, 330.75003)
+scale = Vector2(0.9597156, 1.0715362)
+texture = ExtResource("2_78gc6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="wheel" parent="." instance=ExtResource("2_kry60")]
+position = Vector2(600, 464)
