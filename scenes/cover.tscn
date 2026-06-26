@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuuab2vtxu4ra"]
+
+[ext_resource type="Script" uid="uid://bu1lm4lwlth8b" path="res://scripts/cover.gd" id="1_mf44i"]
+[ext_resource type="Texture2D" uid="uid://dwd2eoayt5si0" path="res://assets/Untitled presentation (7).png" id="2_mf44i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4as2"]
+size = Vector2(408, 81)
+
+[node name="cover_rot" type="Node2D"]
+script = ExtResource("1_mf44i")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, 34)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(204, -39.5)
+shape = SubResource("RectangleShape2D_j4as2")
+
+[node name="UntitledPresentation(7)" type="Sprite2D" parent="Area2D"]
+position = Vector2(-3, -253)
+texture = ExtResource("2_mf44i")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -26,9 +26,9 @@ scale = Vector2(1.2619047, 1.6690141)
 texture = ExtResource("1_l6cm7")
 
 [node name="Screenshot20260618At2_36_59Am" type="Sprite2D" parent="."]
-position = Vector2(1027, 512)
+position = Vector2(1077.7563, 556.61)
 rotation = -1.5421883
-scale = Vector2(0.56839186, 0.73060393)
+scale = Vector2(0.5158318, 0.66799456)
 texture = ExtResource("6_rtw2f")
 
 [node name="Label" type="Label" parent="."]
@@ -77,8 +77,9 @@ text = "Guide"
 script = ExtResource("5_rtw2f")
 
 [node name="Screenshot20260618At2_43_12Am" type="Sprite2D" parent="."]
-position = Vector2(667.00006, 71)
-scale = Vector2(2.8232985, 0.26451617)
+position = Vector2(65, 104.00001)
+rotation = -0.459625
+scale = Vector2(2.8232985, 0.27956483)
 texture = ExtResource("7_oa1go")
 
 [connection signal="pressed" from="play" to="play" method="_on_pressed"]
