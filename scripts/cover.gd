@@ -7,6 +7,8 @@ var direction: float = -1.0
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		toggle_rotation()
+		
+		get_viewport().set_input_as_handled()
 
 func toggle_rotation() -> void:
 	if rotation_tween and rotation_tween.is_running():
