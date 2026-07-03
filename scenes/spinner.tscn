@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqf3x25nwdxds"]
+[gd_scene load_steps=7 format=3 uid="uid://dqf3x25nwdxds"]
 
 [ext_resource type="Texture2D" uid="uid://dhgooie4hgtgm" path="res://assets/Screenshot 2026-06-18 at 2.12.12 AM.png" id="2_78gc6"]
 [ext_resource type="Texture2D" uid="uid://6dgumo5mmkfx" path="res://assets/Untitled presentation (4).png" id="2_beaw0"]
 [ext_resource type="PackedScene" uid="uid://c2wjkpaqkaj82" path="res://scenes/wheel.tscn" id="2_kry60"]
 [ext_resource type="Texture2D" uid="uid://caigp3n4myrqu" path="res://Untitled presentation (3).png" id="3_kry60"]
 [ext_resource type="PackedScene" uid="uid://cuuab2vtxu4ra" path="res://scenes/cover.tscn" id="5_6wjsw"]
+[ext_resource type="PackedScene" uid="uid://c3w0qjyjhkoph" path="res://scenes/red_spinner.tscn" id="6_gjgub"]
 
 [node name="spinner" type="Node2D"]
 
@@ -36,3 +37,7 @@ texture = ExtResource("3_kry60")
 z_index = 1
 position = Vector2(564, 464)
 scale = Vector2(1.23, 1.13)
+
+[node name="red_spinner" parent="." instance=ExtResource("6_gjgub")]
+z_index = 2
+position = Vector2(570, 463)
