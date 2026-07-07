@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dilmlc0ghec8d"]
+[gd_scene load_steps=10 format=3 uid="uid://dilmlc0ghec8d"]
 
 [ext_resource type="Texture2D" uid="uid://cnn15d2ljt8d0" path="res://assets/Screenshot 2026-06-17 at 10.43.13 PM.png" id="1_88ieg"]
 [ext_resource type="FontFile" uid="uid://calgl486mvk4r" path="res://assets/Party Vibes.otf" id="2_30apa"]
@@ -7,6 +7,14 @@
 [ext_resource type="Texture2D" uid="uid://bgc2vq5qimhqt" path="res://assets/Untitled_Artwork 240.png" id="5_xqkvd"]
 [ext_resource type="Texture2D" uid="uid://blktcptt6jf8o" path="res://assets/Untitled_Artwork 241.png" id="6_dhu30"]
 [ext_resource type="Texture2D" uid="uid://bt6rxy3amms1o" path="res://assets/Untitled_Artwork 242.png" id="7_nxcge"]
+[ext_resource type="Script" uid="uid://bl8nww8nkclr1" path="res://scripts/guide.gd" id="8_crhno"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xqkvd"]
+bg_color = Color(0.9843137, 0.9647059, 0.92941177, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="how_to_play" type="Node2D"]
 
@@ -131,3 +139,17 @@ texture = ExtResource("6_dhu30")
 position = Vector2(909, 473)
 scale = Vector2(0.19189453, 0.19189453)
 texture = ExtResource("7_nxcge")
+
+[node name="guide" type="Button" parent="."]
+offset_left = 488.0
+offset_top = 555.0
+offset_right = 679.0
+offset_bottom = 607.0
+theme_override_colors/font_color = Color(0.11764706, 0.15294118, 0.28627452, 1)
+theme_override_fonts/font = ExtResource("3_m8x0n")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_xqkvd")
+text = "Back Home"
+script = ExtResource("8_crhno")
+
+[connection signal="pressed" from="guide" to="guide" method="_on_pressed"]
